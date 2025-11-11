@@ -1,15 +1,12 @@
-# Week 4- Graded Assignment 4
+# Week 5- Graded Assignment 5
 
-### Assignment Objective
+### Assignment Objectives
+Integrate MLFlow into the homework pipeline by Introducing hyper parameter tuning as part of training loop
 
-Setup IRIS homework pipeline into a GitHub repository with two branches dev and main
+- Log Experiment parameters, eval metrics and models utilizing MLFlow
+- demonstrate comparing two experiments using Metric Visualization in MLFlow portal
 
-Create evaluation and data validation unit tests using pytest or unittest
+- remove existing model logging dependency from DVC
 
-1. For evaluation and testing, configure the Continuous Integration (CI) with GitHub Actions to fetch the model and data needed for evaluation from DVC configured in Week-2
-
-2. Push inclusion of pytest code changes to dev branch and raise Pull Request to main branch
-
-3. Every branch should have its own CI on push or PR merge
-
-4. Run a sanity test using GitHub actions printing a report as a comment using cml.
+- modify evaluation pipeline to fetch and utilize latest/best model from MLFlow model registry
+- (Optional) modify CI to fetch and utilize latest/best model from MLFlow model registry to run sanity checks.
